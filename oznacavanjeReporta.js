@@ -1,4 +1,4 @@
-const limit =500; 
+const limit =50; 
 
 var reports=$(".reportInfo");
 
