@@ -18,14 +18,14 @@
     }
 
 var nasumican=Math.floor(Math.random() * 60000);
-var periodSlanja=120000 + nasumican;
+var periodSlanja=60000 + nasumican;
 var dateObj = new Date(Date.now() + periodSlanja);
 document.getElementById("content").append(dateObj);
-
-setTimeout(() => {
     var liste = $(".markAll.check");
     var random = Math.floor((Math.random() * liste.length));
     liste[random].click()
+setTimeout(() => {
+
     $("button:contains('Započeti pljačku')")[random].click();
 }
 ,periodSlanja);
