@@ -8,7 +8,7 @@
 // @grant        none
 // ==/UserScript==
 (function() {
-    if (window.location.href.indexOf("id=31")>-1) {
+    if ($(".titleInHeader").html().indexOf("Tržnica")>-1) {
         var merchants = $(".send_res tbody tr .max a");
     $(".carry").append("<br><a class='slanje'>00 SIROTILJA</a>"); $(".carry").append("<br><a class='slanje'>01 O SU</a>"); $(".carry").append("<br><a class='slanje'>02 NA</a>");
     
