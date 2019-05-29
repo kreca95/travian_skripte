@@ -1,4 +1,15 @@
-var merchants = $(".send_res tbody tr .max a");
+// ==UserScript==
+// @name         Slanje farm liste
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        https://tx3.balkans.travian.com/*
+// @grant        none
+// ==/UserScript==
+(function() {
+if (window.location.href.indexOf("id=31")>-1) {
+    var merchants = $(".send_res tbody tr .max a");
 $(".carry").append("<br><a class='slanje'>00 SIROTILJA</a>"); $(".carry").append("<br><a class='slanje'>01 O SU</a>"); $(".carry").append("<br><a class='slanje'>02 NA</a>");
 
 
@@ -30,3 +41,6 @@ $(".slanje").click((e) => {
 
 
 })
+}
+
+})();
