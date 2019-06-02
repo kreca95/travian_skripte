@@ -20,8 +20,16 @@
             if ($("#t10").val()!=691) {
                 $("#t10").val(691);
                 $("#save").click();
-                $("#dialogCancelButton").click();
+                $(".overlay").click();
+                setTimeout(() => {
+                    $(".overlay").click();
+                }, 500);
+
             }
+            else{
+                $(".overlay").click()
+            }
+
         }, 1500*i);
 
     }
